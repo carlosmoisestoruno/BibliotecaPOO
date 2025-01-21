@@ -32,4 +32,11 @@ public class LibroPrestado extends Libro{
                 ", prestado a = " + nombreUsuario + '\'' +
                 ", fechaPrestamo ='" + fechaPrestamo + '\'';
     }
+
+    @Override
+    public void mostrarDetalle() {
+        super.mostrarDetalle(); //Llamar a la implementacion de la clase padre
+        System.out.println("Prestado a: " + nombreUsuario);
+        System.out.println("Fecha: de prestamo: " + fechaPrestamo);
+    }
 }

@@ -45,4 +45,10 @@ public class Libro {
                 ", isbn='" + isbn + '\'' +
                 '}';
     }
+
+    public void mostrarDetalle(){
+        System.out.println("Titulo: " + getTitulo());
+        System.out.println("Autor: " + getAutor());
+        System.out.println("ISBN: " + getIsbn());
+    }
 }
